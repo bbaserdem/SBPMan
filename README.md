@@ -82,3 +82,6 @@ The intended workflow is;
 This option allows some packages to be kept in local repos.
 * `sbpman sync <PKG>` build a pkgbuild from AUR; and deploy.
 * `sbpman aurupdate` check AUR packages for updates, including upstream changes.
+* `sbpman remove <PKG>` remove from repo and delete from cloud the 
+* `sbpman --target <REPO> generate` generate an empty repo at the target.
+* `sbpman --output </etc/pacman.d/sbpman> printconfig` print config (to STDOUT or to a file).
