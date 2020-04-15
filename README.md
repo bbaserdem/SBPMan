@@ -1,6 +1,8 @@
-# Sereman
+# SBP-Man
 
 Python wrapper around aurutils for easy managing a personal repo on cloud.
+
+SBP-Man stands for **S**elf **B**uilt **P**ackage **Man**ager.
 
 # About
 
@@ -57,9 +59,9 @@ into the repo.
 
 The configuration file will be at, preferentially;
 
-* `$XDG_CONFIG_HOME/sereman/sereman.conf`
-* `~/.config/sereman/sereman.conf`
-* `~/.sereman.conf`
+* `$XDG_CONFIG_HOME/sbpman/sbpman.conf`
+* `~/.config/sbpman/sbpman.conf`
+* `~/.sbpman.conf`
 
 The following info will be needed in there;
 
@@ -75,8 +77,8 @@ Also, depending on the cloud service, some credentials will need to be configure
 
 The intended workflow is;
 
-* `sereman build <PKG>` build and deploy package to default target. (AWS)
-* `sereman --target local build <PKG>` build and deploy package to a target profile.
+* `sbpman build <PKG>` build and deploy package to default target. (AWS)
+* `sbpman --target local build <PKG>` build and deploy package to a target profile.
 This option allows some packages to be kept in local repos.
-* `sereman sync <PKG>` build a pkgbuild from AUR; and deploy.
-* `sereman aurupdate` check AUR packages for updates, including upstream changes.
+* `sbpman sync <PKG>` build a pkgbuild from AUR; and deploy.
+* `sbpman aurupdate` check AUR packages for updates, including upstream changes.
